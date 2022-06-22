@@ -1,18 +1,17 @@
 const burgers = document.querySelector('.burgers');
 const nav_menu = document.querySelector('.nav_menu');
-let isburger = false;
+const back = document.querySelector('.nav_back');
 
 const handleBurgerClick = () => {
-  if(isburger === false){
-    isburger = true;
-    burgers.classList.add("active");
-    nav_menu.classList.add("active");
-  }else{
-    isburger = false;
-    burgers.classList.remove("active");
-    nav_menu.classList.remove("active");
-  }
+  burgers.classList.toggle("active");
+  nav_menu.classList.toggle("active");
+  back.classList.toggle("active");
+}
+const handleBackClick = () =>{
+  burgers.classList.remove("active");
+  nav_menu.classList.remove("active");
+  back.classList.remove("active");
 }
 
-
+back.addEventListener('click', handleBackClick);
 burgers.addEventListener('click', handleBurgerClick);
