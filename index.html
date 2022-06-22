@@ -1,61 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="./css/subindex.css"/>
+  <title>burgers menu</title>
 </head>
 <body>
-    <div class="body_wrap">
-        <header>
-            <ul class="wrap">
-                <li class="burger">
-                    <div class="line"><img src="https://kyohyunkim.github.io/max/img/burger1.svg" id="line"></div>
-                    <div class="ball"><img src="https://kyohyunkim.github.io/max/img/burger2.svg" id="ball"></div>
-                    
-                </li>
-
-                <li class="logo"><img src="https://kyohyunkim.github.io/max/img/max_logo_blk.svg" id="logo"></li>
-
-                <li class="back">
-                    <img src="https://kyohyunkim.github.io/max/img/back.svg" id="back">
-                </li>
-            </ul>
-            <ul class="fix_menu">
-                <li>About us</li>
-                <li>&#124;</li>
-                <li>Photo</li>
-                <li>&#124;</li>
-                <li>Video</li>
-            </ul>
-        </header>
-
-        <div class="nav" id="nav">
-            <ul>
-                <li>About us</li>
-                <li>Photo</li>
-                <li>Video</li>
-            </ul>
-        </div>
-
-        <main>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide img1"></div>
-                    <div class="swiper-slide img2"></div>
-                    <div class="swiper-slide img3"></div>
-                </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
-              </div>
-        </main>
-        <footer></footer>
+  <main>
+    <header>
+      <div class="nav-left">
+        <ul class="burgers">
+          <li class="burger"></li>
+          <li class="burger"></li>
+          <li class="burger"></li>
+        </ul>
+      </div>
+      <div class="logo">LOGO</div>
+      <div class="nav-right">
+        <div class="back-arrow">←</div>
+      </div>
+    </header>
+    <div class="nav_menu">
+      <ul>
+        <li>main</li>
+        <li>sub</li>
+        <li>bonus</li>
+      </ul>
     </div>
-    <script defer src="./js/index.js"></script>
-    <script defer src="./js/jquery-3.6.0.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  </main>
+<script src="./js/subindex.js"></script>
 </body>
 </html>
