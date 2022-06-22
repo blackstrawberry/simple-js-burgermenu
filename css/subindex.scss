@@ -12,13 +12,13 @@ body{
 main{
   background-color: white;
   height: 100vh;
-  width: 400px;
+  width: 800px;
   margin: 0 auto;
 }
 
 header{
-  max-width: 400px;
-  height: 20px;
+  max-width: 800px;
+  height: 100px;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -27,6 +27,7 @@ header{
     height: 100%;
     width: 36px;
     .burgers{
+      transform: scale(3) translate(20px, 12px);
       align-items:center;
       padding: 5px;
       height: 16px;
@@ -60,7 +61,12 @@ header{
       }
     }
   }
+  .logo{
+    font-size: 60px;
+    line-height: 100px;
+  }
   .nav-right{
+    transform: scale(3) translate(-15px, 40px);
     font-size: 26px;
     line-height: 26px;
     margin-right: 5px;
@@ -74,12 +80,13 @@ header{
   height: 100%;
   transition: .5s;
   ul{
-    padding: 10px;
+    padding: 20px 40px;
     li{
+      font-size: 40px;
       padding: 5px 0;
     }
   }
   &.active{
-    width: 200px;
+    width: 400px;
   }
 }

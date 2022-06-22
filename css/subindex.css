@@ -14,13 +14,13 @@ body ul, body li, body a {
 main {
   background-color: white;
   height: 100vh;
-  width: 400px;
+  width: 800px;
   margin: 0 auto;
 }
 
 header {
-  max-width: 400px;
-  height: 20px;
+  max-width: 800px;
+  height: 100px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,6 +37,8 @@ header .nav-left {
 }
 
 header .nav-left .burgers {
+  -webkit-transform: scale(3) translate(20px, 12px);
+          transform: scale(3) translate(20px, 12px);
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -80,7 +82,14 @@ header .nav-left .burgers.active li:nth-of-type(3) {
           transform: translate(0, -6px) rotate(-45deg);
 }
 
+header .logo {
+  font-size: 60px;
+  line-height: 100px;
+}
+
 header .nav-right {
+  -webkit-transform: scale(3) translate(-15px, 40px);
+          transform: scale(3) translate(-15px, 40px);
   font-size: 26px;
   line-height: 26px;
   margin-right: 5px;
@@ -96,14 +105,15 @@ header .nav-right {
 }
 
 .nav_menu ul {
-  padding: 10px;
+  padding: 20px 40px;
 }
 
 .nav_menu ul li {
+  font-size: 40px;
   padding: 5px 0;
 }
 
 .nav_menu.active {
-  width: 200px;
+  width: 400px;
 }
 /*# sourceMappingURL=subindex.css.map */
